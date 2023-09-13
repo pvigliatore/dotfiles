@@ -9,14 +9,13 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/paolovigliatore/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -120,13 +119,7 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 # Configure direnv
 eval "$(direnv hook zsh)" > /dev/null
 
-export EDGE_HOME=${HOME}/projects/edge
-alias edge="cd ${EDGE_HOME}"
-alias webapp="cd ${EDGE_HOME}/apps/edge_web/assets"
-
-. /usr/local/opt/asdf/libexec/asdf.sh
-export PATH="/usr/local/opt/file-formula/bin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/Users/paolovigliatore/.local/bin:$PATH"
+. ${HOMEBREW_PREFIX}/opt/asdf/libexec/asdf.sh
+export PATH="~/.local/bin:$PATH"
 
 export XDG_CONFIG_HOME=~/.config
