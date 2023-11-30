@@ -123,3 +123,7 @@ eval "$(direnv hook zsh)" > /dev/null
 export PATH="~/.local/bin:$PATH"
 
 export XDG_CONFIG_HOME=~/.config
+export PATH="/opt/homebrew/opt/awscli@1/bin:$PATH"
+
+export EDITOR=nvim
+
