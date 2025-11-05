@@ -1,4 +1,4 @@
-.PHONY: sync
+.PHONY: install
 
-sync: 
-	rsync --archive --exclude .git -v "${PWD}/dotfiles" ~
+install:
+	stow --target=$(HOME) ghostty lazygit tmux zsh
