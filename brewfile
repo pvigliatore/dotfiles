@@ -4,23 +4,35 @@ brew font-fira-code-nerd-font
 brew font-iosevka-nerd-font
 brew font-victor-mono-nerd-font
 
-cask amethyst
+cask calibre
+cask postman
+cask visual-studio-code
+
+# Browsers
 cask brave-browser
+
+# Productivity
+cask 1password
+cask amethyst
 cask caffeine
-cask dash
-cask discord
 cask ghostty
 cask google-drive
-cask orbstask
-cask postman
+cask obsidian
+
+# Chat
+cask discord
+cask whatsapp
+cask slack
 
 # Terminals
 brew fish
 brew fisher
 brew powerlevel10k
 
-
 # Dev Tools
+cask dash
+cask orbstask
+
 brew asdf
 brew direnv
 brew fd
