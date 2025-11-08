@@ -815,7 +815,7 @@ unfocused-split-fill =
 # arguments. For example, `ghostty -e fish --with --custom --args`.
 # This flag sets the `initial-command` configuration, see that for more
 # information.
-command = 
+command = /opt/homebrew/bin/fish
 
 # This is the same as "command", but only applies to the first terminal
 # surface created when Ghostty starts. Subsequent terminal surfaces will use
@@ -1140,7 +1140,7 @@ keybind = shift+left=adjust_selection:left
 keybind = super+equal=increase_font_size:1
 keybind = shift+page_up=adjust_selection:page_up
 keybind = super+physical:three=goto_tab:3
-keybind = super+physical:zero=last_tab
+keybind = super+physical:zero=reset_font_size
 keybind = super+right=text:\x05
 keybind = super+d=new_split:right
 keybind = super+ctrl+down=resize_split:down,10
@@ -1708,7 +1708,7 @@ quick-terminal-autohide = true
 #   * `bash`, `elvish`, `fish`, `zsh` - Use this specific shell injection scheme.
 # 
 # The default value is `detect`.
-shell-integration = zsh
+shell-integration = detect
 
 # Shell integration features to enable if shell integration itself is enabled.
 # The format of this is a list of features to enable separated by commas. If
@@ -2152,7 +2152,7 @@ gtk-wide-tabs = true
 # 
 # This configuration only has an effect if Ghostty was built with
 # Adwaita support.
-gtk-adwaita = true
+# gtk-adwaita = true
 
 # If `true` (default), applications running in the terminal can show desktop
 # notifications using certain escape sequences such as OSC 9 or OSC 777.

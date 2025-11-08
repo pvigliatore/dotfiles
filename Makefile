@@ -1,4 +1,10 @@
-.PHONY: install
+.PHONY: install fish
 
-install:
-	stow --target=$(HOME) ghostty lazygit tmux zsh
+install: fish
+	stow --dotfiles --target=$(HOME) ghostty lazygit tmux zsh
+
+fish:
+	brew install fish fisher
+	fish -c "fisher install IlanCosman/tide@v6"
+	fish -c "tide configure --auto --style=Classic --prompt_colors='True color' --classic_prompt_color=Dark --show_time=No --classic_prompt_separators=Slanted --powerline_prompt_heads=Slanted --powerline_prompt_tails=Slanted --powerline_prompt_style='One line' --prompt_spacing=Sparse --icons='Many icons' --transient=Yes"
+

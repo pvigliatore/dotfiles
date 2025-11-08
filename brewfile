@@ -1,0 +1,44 @@
+# Developer Fonts
+tap cask-fonts
+brew font-fira-code-nerd-font
+brew font-iosevka-nerd-font
+brew font-victor-mono-nerd-font
+
+cask amethyst
+cask brave-browser
+cask caffeine
+cask dash
+cask discord
+cask ghostty
+cask google-drive
+cask orbstask
+cask postman
+
+# Terminals
+brew fish
+brew fisher
+brew powerlevel10k
+
+
+# Dev Tools
+brew asdf
+brew direnv
+brew fd
+brew fzf
+brew git
+brew jq
+brew lazygit
+brew neovim
+brew "postgresql@16", link: true
+brew ripgrep
+brew stow
+brew tmux
+
+
+# sqllite
+# kind
+# kubectx
+# tilt
+# helm
+# k9s
+# sops
