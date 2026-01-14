@@ -3,7 +3,9 @@
 alias k=kubectl
 
 #
-# Add krew to PATH
+# Add to PATH
 # Krew is the plugin manager for kubectl
 #
-set -gx PATH $PATH $HOME/.krew/bin
+fish_add_path --global \
+	$HOME/.krew/bin \
+	$HOME/.local/bin

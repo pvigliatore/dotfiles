@@ -1,7 +1,10 @@
 .PHONY: install fish
 
 install: fish
-	stow --dotfiles --target=$(HOME) ghostty lazygit tmux zsh
+	stow --dotfiles --target=$(HOME) ghostty lazygit tmux fish
+
+install-work:
+	stow --dotfiles --target=$(HOME) fish-work
 
 fish:
 	brew install fish fisher
