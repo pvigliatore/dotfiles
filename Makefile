@@ -3,9 +3,6 @@
 install: fish
 	stow --dotfiles --target=$(HOME) ghostty lazygit tmux fish
 
-install-work:
-	stow --dotfiles --target=$(HOME) fish-work
-
 fish:
 	brew install fish fisher
 	fish -c "fish_add_path /opt/homebrew/bin"
