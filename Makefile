@@ -1,6 +1,6 @@
 .PHONY: install fish
 
-install: fish
+install:
 	stow --dotfiles --target=$(HOME) ghostty lazygit tmux fish
 
 fish:
